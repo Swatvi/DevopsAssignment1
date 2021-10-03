@@ -9,9 +9,6 @@ public class flipkart {
         driver.get("https://www.flipkart.com");
         driver.manage().window().maximize();
     }
-
-//Force change
-
 public static void initWebdriver()
 
 	public static void flipkartLogin() {
@@ -30,4 +27,3 @@ public static void initWebdriver()
             e.printStackTrace();
         }
     }
-
