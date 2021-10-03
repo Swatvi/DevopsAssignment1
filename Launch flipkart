@@ -1,6 +1,6 @@
 public class flipkart {
     public static WebDriver driver;
-	driver = new ChromeDriver();
+	//driver = new ChromeDriver();
 
     public static void initWebdriver() {
     	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\nkasthuri\\Music\\chromedriver.exe");
@@ -11,3 +11,4 @@ public class flipkart {
         driver.manage().window().maximize();
     }
 public static void initWebdriver()
+
