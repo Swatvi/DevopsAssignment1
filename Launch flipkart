@@ -1,11 +1,9 @@
 public class flipkart {
     public static WebDriver driver;
-
-    public static void initWebdriver() {
+	public static void initWebdriver() {
     	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\nkasthuri\\Music\\chromedriver.exe");
          driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
         driver.get("https://www.flipkart.com");
         driver.manage().window().maximize();
     }
@@ -25,5 +23,7 @@ public static void initWebdriver()
             Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
+			added_e.printStackTrace();
         }
     }
+	loginButton.click();
