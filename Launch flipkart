@@ -5,20 +5,17 @@ public class flipkart {
     	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\nkasthuri\\Music\\chromedriver.exe");
          driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         driver.get("https://www.flipkart.com");
         driver.manage().window().maximize();
     }
-
-//Force change
-
 public static void initWebdriver()
 
 	public static void flipkartLogin() {
         WebElement username = driver.findElement(By.xpath("(//input[@type='text'])[2]"));
         highLighterMethod(driver, username);
         username.sendKeys("8446508456");
-		added_highLighterMethod(driver, username);
         WebElement password = driver.findElement(By.xpath("//input[@type='password']"));
         highLighterMethod(driver, password);
         password.sendKeys("Swati@123");
@@ -32,4 +29,3 @@ public static void initWebdriver()
 			added_e.printStackTrace();
         }
     }
-
