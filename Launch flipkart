@@ -5,8 +5,6 @@ public class flipkart {
     	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\nkasthuri\\Music\\chromedriver.exe");
          driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
         driver.get("https://www.flipkart.com");
         driver.manage().window().maximize();
     }
