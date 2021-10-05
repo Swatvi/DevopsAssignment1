@@ -1,3 +1,2 @@
         driver.get("https://www.flipkart.com");
         driver.manage().window().maximize();
-        Println('driver minimized');   
