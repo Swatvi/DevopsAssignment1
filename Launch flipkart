@@ -24,6 +24,7 @@ public static void initWebdriver()
             Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
+			added_e.printStackTrace();
         }
     }
 	loginButton.click();
